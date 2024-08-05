@@ -2,3 +2,6 @@
 .DS_Store
 # Build file
 app
+# Solution
+docker-compose.yml
+Dockerfile

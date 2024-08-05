@@ -7,17 +7,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 func Connect() {
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatalf("Error loading .env file: %s", err)
-	}
-
 	MONGO_URI := os.Getenv("MONGO_URI")
 
 	clientOptions := options.Client().ApplyURI(MONGO_URI)
