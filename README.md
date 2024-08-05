@@ -2,7 +2,7 @@
 
 A Aplicação precisa de duas variáveis de ambiente:
 - MONGO_URI: URI de conexão com o MongoDB
-- PORT: Porta em que a aplicação irá rodar
+- PORT: Porta em que a aplicação irá rodar (usar porta 80 no container e 8080 no host)
 
 ## Docker build
 É necessário criar um docker file com duas fases:
@@ -25,4 +25,4 @@ Não esqueça de configurar as variáveis de ambiente. Tanto da aplicação quan
 
 ## Check
 
-Se tudo estiver funcionando, a aplicação vai iniciar sem problemas e vai logar "✅ Connected to mongoDB." e você terá acesso a rota que retorna um json com a mensagem "Hello World!".
+Se tudo estiver funcionando, a aplicação vai iniciar sem problemas e vai logar "✅ Connected to mongoDB." e você terá acesso a rota que retorna um json com a mensagem "Hello World!" `http://127.0.0.1:8080`.
