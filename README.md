@@ -9,9 +9,14 @@ A Aplicação precisa de duas variáveis de ambiente:
 1. Na primeira fase, instale as dependências e faça o build da aplicação. (Use qualquer imagem go 1.22)
 2. Na segunda fase, copie o binário compilado da primeira fase e rode a aplicação. (Use alpine:3.14)
 
+- Para obter os requisitos:
+```bash
+$ go mod tidy
+```
+
 - Para compilar rodar o comando:
 ```bash
-  $ make build
+$ make build
 ```
 Isso vai criar um binário chamado "app" na raiz do projeto.
 
